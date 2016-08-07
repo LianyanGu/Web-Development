@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+<link rel="stylesheet" href="file:///Users/GLY/Desktop/Web%20Development/Styles.css">
+
+
+<meta name="viewpoint" contect="width=device-width, initial-scale=1.0">
+
+<div class="container-fluid">
+<head>
+
+<h1>Movie Trailer finder</h1>
+
+
+</head>
+<body>
+
+<div >
+    <div class="col-md-9">
+        <p1>Welcome to <b><i style="color:white">Movie Trailer Finder</i></b>.
+        Check out the trailers for the movies you want to watch!
+        </p1>
+    </div>
+
+    <div style="text-align:center;" class="col-md-3"><button class="button"><a href="https://www.linkedin.com/in/lianyan-gu-157513b1"><span>About Me</span></a></button>
+    </div>
+
+</div>
+
+<br>
+<div class="row" id="organize-box">
+    <div class="col-lg-4 col-sm-4">
+        <h2>Movie years
+            <label><input type="radio" name="2016-2017" onclick="changeYear(2016)">2016</label>
+            <label><input type="radio" name="2016-2017" onclick="changeYear(2017)">2017</label>
+        </h2>
+    </div>
+    <div class="col-lg-4 col-sm-4 selection-box">
+        <label style="color:white">Language of the movie</label>
+        <select  onchange="test(this)">
+            <optgroup label="By Language" id="languages">
+                <option value="chinese">Chinese</option>
+                <option value="english" onclick="changeLanguage("EN")">English</option>
+                <option value="french" onclick="changeLanguage("FR")">French</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <!-- Other sortation methods-->
+    <div class="col-lg-4 col-sm-4">
+        <h3>Movie Name<form action="/some other movies' photos">
+        <input type="text" style="color:black" id="movieName" required placeholder="Find movie trailer :)">
+        </form>
+        </h3>
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="getTrailers()">Get the Trailers</button>
+</div>
+
+<br>
+
+<div class="alphabetOrder">
+<span class="dropdown">
+    <b2 style="color: white">C</b2>
+    <div class="dropdown-content">
+        <ul>
+        <li><a href="#" style="text-align:center";>Central Intelligence</a></li>
+        <li><a href="#" style="text-align:center";>the Conjuring 2</a></li>
+        </ul>
+    </div>
+</span>
+</div>
+
+
+
+<br>
+<!-- NEED TO SORT alphabetically-->
+<img class="fit-image" src="http://waltdisneystudios.com/static/ZTA_PAYOFF_MASTER_v16.0r_Composed_Mechv8_5MB.jpg" class="img-thumbnail img-responsive" alt="Zootopia">
+<a href="https://www.youtube.com/watch?v=kPBslnP2PTs"><img src="http://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/legend_of_tarzan_keyart_06.15.16.jpg?itok=L6Df6o3e" alt="The legend of Tarzan"></a>
+<img src="http://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/suicide_squad_poster_atomic.jpg?itok=IasJQoGZ"  alt="Suicide Squad">
+<img src="http://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/central_intelligence_keyart.jpg?itok=m_FouJcR" alt="Central Intelligence">
+<img src="http://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/fantastic_beasts_keyart2.jpg?itok=U_cZVlCK" alt="Fantastic Beasts and Where to Find Them">
+<img src="http://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/accountant_keyart2_0.jpg?itok=SzGP6pBq" alt="The Accountant">
+<img src="http://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/conjuring2_keyart2.jpg?itok=CG3AAPLW"  alt="The Conjuring 2">
+<img src="http://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/lights_out_keyart2.jpg?itok=vmjtHiPu"  alt="Lights Out">
+<img src="http://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/storks_keyart2.jpg?itok=laepa1qt"  alt="Storks">
+<img src="http://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/sully_keyart1.jpg?itok=QIvOktBU"  alt="Sully">
+<img src="http://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/war_dogs_keyart.2.jpg?itok=PXWHbYLr"  alt="War Dogs">
+<img src=""  alt="">
+<img src=""  alt="">
+
+<br>
+<p4 style="color:white">Disclaimer: The pictures of the movies on this website are the properties of their respective studios and I do not own them.</p4>
+
+
+</body>
+
+<footer style="color:white">
+    Created by Lianyan Gu
+</footer>
+
+
+</html>
+</div>
