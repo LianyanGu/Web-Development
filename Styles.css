@@ -50,7 +50,7 @@ body{
 }
 .fit-image{
     height:400px;
-    width:280px;
+    width:270px;
 }
 .listStyle{
     color:silver;
@@ -71,6 +71,9 @@ body{
     padding:10px;
     width:100%;
     display:block;
+}
+.alphabetOrder{
+    
 }
 .dropdown:hover .dropdown-content{
     display:block;
