@@ -2,7 +2,6 @@
 <html lang="en">
 <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
 <link rel="stylesheet" href="Styles.css">
-<link rel="Commands.js">
 
 
 
@@ -10,6 +9,9 @@
 
 <div class="container-fluid">
 <head>
+<script type="text/javascript" src="Commands.js"></script>
+
+
 
 <h1>Movie Trailer finder</h1>
 
@@ -24,7 +26,7 @@
         </p1>
     </div>
 
-    <div style="text-align:center;" class="col-md-3"><button class="button"><a href="https://www.linkedin.com/in/lianyan-gu-157513b1"><span>About Me</span></a></button>
+    <div style="text-align:center;" class="col-md-3"><button onclick="onClick()" class="button"><a href="https://www.linkedin.com/in/lianyan-gu-157513b1"><span>About Me</span></a></button>
     </div>
 
 </div>
@@ -38,12 +40,12 @@
     </div>
     <div class="col-lg-4 col-sm-4 selection-box">
         <label style="color:white">Language of the movie</label><br>
-        <select  onchange="test(this)">
-            <optgroup label="By Language" id="languages">
-                <option value="chinese">Chinese</option>
-                <option value="english" onclick="changeLanguage("EN")">English</option>
-                <option value="french" onclick="changeLanguage("FR")">French</option>
-            </optgroup>
+        <select  onchange="langChg()" id="lang" name="languages">
+
+            <option value="chinese">Chinese</option>
+            <option value="english" onclick="changeLanguage("EN")">English</option>
+            <option value="french" onclick="changeLanguage("FR")">French</option>
+
         </select>
     </div>
 
