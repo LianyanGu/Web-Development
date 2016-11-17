@@ -5,18 +5,19 @@ var options = {
 };
 
 function onClick() {
-    console.log('asdf');
+    var movieName=document.getElementById("movieName").value;
+    console.log(movieName);
 }
 
 function changeYear(y) {
     options.year = y;
 }
 
-function test(selectBox) {
-    var op = selectBox.options[selectBox.selectedIndex];
-    console.log(op);
-    options.language = op.value;
-}
+// function test(selectBox) {
+//     var op = selectBox.options[selectBox.selectedIndex];
+//     console.log(op);
+//     options.language = op.value;
+// }
 //in html code, write test(this)
 
 function getTrailers() {
@@ -33,13 +34,14 @@ function findMovieName() {
     console.log('');
 }
 
-function langChg(){
-    var sel=document.getElementById("lang")
-    function getSelectedOption(sel){
+function langChg() {
+    var sel = document.getElementById("lang")
+
+    function getSelectedOption(sel) {
         var opt;
-        for (var i=0,len=sel.options.length; i<len;i++){
-            opt=sel.options[i];
-            if (opt.seleted===true){
+        for (var i = 0, len = sel.options.length; i < len; i++) {
+            opt = sel.options[i];
+            if (opt.seleted === true) {
                 break;
             }
         }
@@ -47,15 +49,7 @@ function langChg(){
     console.log(sel.options[sel.selectedIndex].text)
 
 }
+
 // var sel=document.getElementById("scripts")
 // var opt=sel.options[se1.selectedIndex]
 // consol.log(opt.value)
-
-
-
-
-
-
-
-
-
